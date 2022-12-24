@@ -1,0 +1,67 @@
+@import url('~antd/dist/antd.min.css');
+@import '@assets/styles/__colors.scss';
+
+$base-border-radius: 6px;
+.ant-input,
+.ant-btn,
+.ant-picker,
+.ant-card,
+.ant-table-bordered,
+.ant-input-affix-wrapper {
+  border-radius: $base-border-radius;
+}
+.ant-input-search {
+  .ant-input-affix-wrapper {
+    border-radius: $base-border-radius !important;
+  }
+  .ant-input-group-addon {
+    display: none;
+  }
+}
+
+.ant-select-selector {
+  border-radius: $base-border-radius !important;
+}
+
+.ant-table-container {
+  border-radius: $base-border-radius;
+
+  table {
+    border-top-right-radius: $base-border-radius;
+    border-top-left-radius: $base-border-radius;
+    > thead > tr {
+      &:first-child {
+        th {
+          &:first-child {
+            border-top-left-radius: $base-border-radius;
+          }
+          &:last-child {
+            border-top-right-radius: $base-border-radius;
+          }
+        }
+      }
+    }
+    .ant-table-placeholder > td {
+      border-bottom-right-radius: $base-border-radius;
+      border-bottom-left-radius: $base-border-radius;
+    }
+  }
+}
+
+.ant-modal-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: $black;
+  text-align: center;
+}
+.account_item {
+  .ant-form-item {
+    margin: 0;
+  }
+}
+.display-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,402 @@
+{
+  "page": {
+    "header": {
+      "title": "Cồng thông tin diện tử",
+      "subTitle": "Cục đăng kiểm việt nam"
+    }
+  },
+  "menu": {
+    "home": "Tổng quát",
+    "message": "Tin nhắn",
+    "scheduler": "Lịch hẹn",
+    "notification": "Thông báo",
+    "document": "Tài liệu",
+    "contact": "Liên hệ",
+    "setting": "Cài đặt",
+    "account": "Tài khoản"
+  },
+  "workplace": {
+    "header": "Ứng dụng",
+    "tabs": {
+      "all": "Tất cả",
+      "task": "Công việc",
+      "department": "Các phòng ban",
+      "employee": "Nhân sự",
+      "customer": "Khách hàng"
+    },
+    "items": {
+      "report": "Thống kê",
+      "task": "Công việc",
+      "workplace": "Cơ quan",
+      "var": "Phòng VAR",
+      "car": "Phòng chất lượng xe cơ giới",
+      "penalty": "Phòng Quy Phạm",
+      "construction": "Phòng Công trình biển",
+      "industry": "Phòng Công nghiệp",
+      "railway": "Phòng Đường Sắt",
+      "ship": "Phòng Tàu biển",
+      "boat": "Phòng Tàu Sông",
+      "policy": "Phòng Pháp chế - KHCN",
+      "international": "Phòng hợp Tác quốc tế",
+      "officer": "Phòng Tổ chức Cán bộ",
+      "investment": "Phòng TC - Kế hoạch đầu tư",
+      "it": "Trung tâm Tin học",
+      "vrqc": "Trung tâm VRQC",
+      "trainning": "TT. Tập huấn Nghiệp vụ ĐK",
+      "vmtc": "TT. Thử nghiệm xe cơ giới (VMTC)",
+      "netc": "TT. Thử nghiệm khí thải PTCGĐB (NETC)",
+      "customer": "Khách hàng",
+      "employee": "Nhân viên",
+      "security": "Phòng Bảo vệ"
+    }
+  },
+  "task": {
+    "header": "Công việc"
+  },
+  "report": { "header": "Thống kê" },
+  "employee": {
+    "header": "Nhân sự"
+  },
+  "customer": {
+    "header": "Khách hàng",
+    "title": {
+      "list": "Danh sách khách hàng",
+      "main": "Thông tin khách hàng",
+      "info": "Thông tin cá nhân",
+      "work": "Thông tin công việc"
+    },
+    "new": "Khách hàng mới",
+    "table": {
+      "stt": "STT",
+      "fullName": "Họ tên",
+      "email": "Email",
+      "phone": "Số điện thoại",
+      "type": "Phân loại khách hàng",
+      "department": "Cơ quan",
+      "total": "Tổng cộng {{total}} lượt khách"
+    },
+    "new_customer": "Khách hàng mới",
+    "old_customer": "Khách hàng cũ",
+    "vip_customer": "Khách VIP",
+    "info": "Thông tin",
+    "history": "Lịch sử",
+    "fullName": "Họ và tên",
+    "address": "Địa chỉ",
+    "cmnd": "Số CMND/ CCCD",
+    "email": "Email",
+    "phone": "Số điện thoại",
+    "province": "Tỉnh/ Thành",
+    "type": "Phân loại khách hàng",
+    "district": "Quận/ Huyện",
+    "gender": "Giới tính",
+    "male": "Nam",
+    "female": "Nữ",
+    "update": "Cập nhật",
+    "cancel": "Huỷ",
+    "attach": "Đính kèm",
+    "attachment_file": "File đính kèm",
+    "note": "Ghi chú",
+    "comment": "Nhập bình luận...",
+    "note_placeholder": "Mô tả nội dung ghi chú đính kèm...",
+    "validation": {
+      "fullname": "Vui lòng nhập họ tên khách hàng",
+      "phone": "Số điện thoại: 10 ~ 16 ký tự chữ số",
+      "cmnd": "Số CMND/ CCCD: 9 ~ 13 ký tự chữ số",
+      "email": "Địa chỉ email không chính xac"
+    },
+    "company": {
+      "name": "Tên công ty",
+      "department": "Đơn vị phụ trách",
+      "address": "Địa chỉ công ty"
+    }
+  },
+  "insert": {
+    "save": "Đăng ký",
+    "success": "Đăng kýthành công",
+    "error": "Đăng ký thất bại"
+  },
+  "update": {
+    "save": "Cập nhật",
+    "success": "Cập nhật thành công",
+    "error": "Cập nhật thất bại"
+  },
+  "security": {
+    "header": "Phòng Bảo vệ",
+    "menus": {
+      "vehicle": "Phương tiện ra vào",
+      "customer": "Khách hàng ra vào"
+    },
+    "vehicle": {
+      "title": "Phương tiện ra vào",
+      "table": {
+        "no": "STT",
+        "plate_number": "Biển số xe",
+        "owner": "Chủ sở hữu",
+        "type": "Loại phương tiện",
+        "checkin_time": "Thời gian đến",
+        "checkout_time": "Thời gian đi",
+        "certification": "Giấy phép đăng kiểm",
+        "expired_date": "Ngày hết hạn"
+      },
+      "register": "Đăng ký phương tiện"
+    },
+    "customer": {
+      "title": "Khách hàng ra vào",
+      "table": {
+        "fullname": "Họ tên",
+        "address": "Địa điểm",
+        "type": "Phân loại khách",
+        "apartment": "Đơn vị phụ trách",
+        "pic": "Người phụ trách",
+        "company": "Tên công ty",
+        "status": "Trạng thái",
+        "image": "Hình ảnh",
+        "purpose": "Mục đích",
+        "note": "Ghi chú",
+        "checkin_time": "Thời gian đến",
+        "checkout_time": "Rời khỏi"
+      },
+      "dropdown": {
+        "add": "Đăng ký thông tin khách hàng",
+        "task": "Duyệt",
+        "contact": "Liên hệ",
+        "info": "Thông tin khách hàng"
+      },
+      "modal": {
+        "title": {
+          "request": "Duyệt yêu cầu",
+          "register": "Đăng ký ra vào",
+          "update": "Thông tin ra vào"
+        },
+        "note_placeholder": "Mô tả ghi chú kèm theo (nếu có)",
+        "purpose_placeholder": "Mô tả mục đích của khách hàng",
+        "customer_title": "Tên",
+        "customer_placeholder": "Nhập họ tên",
+        "company_placeholder": "Nhập tên công ty",
+        "customer_required": "Vui lòng nhập họ tên khách hàng",
+        "pic_placeholder": "Nhập tên người phụ trách",
+        "department_placeholder": "Chọn đơn vị phụ trách"
+      },
+      "new_customer": "Khách hàng mới",
+      "old_customer": "Khách hàng cũ",
+      "vip_customer": "Khách VIP",
+      "register": "Đăng ký ra vào"
+    },
+    "not_register": "Chưa đăng ký",
+    "notification": {
+      "succeed": {
+        "confirm": "Xét duyệt thành công",
+        "register": "Đăng ký thành công"
+      },
+      "error": {
+        "confirm": "Xét duyệt thất bại",
+        "register": "Đăng ký thất bại"
+      }
+    },
+    "status": {
+      "waiting": "Chưa duyệt",
+      "reject": "Từ chối",
+      "confirm": "Đã xác nhận"
+    }
+  },
+  "common": {
+    "search": "Tìm",
+    "date_range": "Theo ngày",
+    "print": "In",
+    "info": "Thông tin",
+    "no_data": "Không có dữ liệu",
+    "stations": "Cơ quan",
+    "staff": "Nhân viên",
+    "error": "Có lỗi xảy ra vui lòng thử lại sau",
+    "confirm": "Xác nhận",
+    "reject": "Từ chối",
+    "register": "Đăng ký",
+    "succeed": "Thành công",
+    "update_success": "Đã cập nhật thành công",
+    "failed": "Thất bại",
+    "under_development": "Tính năng đang được phát triển",
+    "upload_error": "Upload thất bại, vui lòng thử lại sau.",
+    "required": "Vui lòng nhập {{ field }}."
+  },
+  "validation": {
+    "max_length": "Tối đa {{count}} ký tự.",
+    "image_types": "Chỉ có thể chọn file ảnh: png, jpeg",
+    "image_size": "Chỉ có thể chọn file < 2MB"
+  },
+  "login": {
+    "header": {
+      "title": "Đăng nhập tài khoản",
+      "subTitle": "Chào mừng trở lại, vui lòng đăng nhập để sử dụng tác vụ."
+    },
+    "username": {
+      "placeholder": "Tài khoản đăng nhập",
+      "message": "Vui lòng nhập tên tài khoản"
+    },
+    "password": {
+      "placeholder": "Nhập Mật khẩu đăng nhập",
+      "message": "Vui lòng nhập mật khảu đăng nhập"
+    },
+    "errors": {
+      "title": "Xác thực thất bại",
+      "description": "Vui lòng kiểm tra lại tài khoản."
+    },
+    "success": {
+      "title": "Xác thực thành công",
+      "description": "Xin chào "
+    },
+    "submit": "Đăng nhập"
+  },
+  "about": {
+    "title": "Gioi thieu",
+    "description": "This example app is part of the <a href=\"https://github.com/coryhouse/react-slingshot\">React-Slingshot\n                starter kit</a>."
+  },
+  "about.title": "Gioi thieu",
+  "about.description": "Vi du nay la mot phan cua <a href=\"https://github.com/coryhouse/react-slingshot\">React-Slingshot\n                starter kit</a>.",
+  "about.click_to_this_bad_link": "Nhan vao link khong work nay",
+  "about.to_see_404": " de xem 404 page",
+  "home.header": "VNese React JS Template - Redux Thunk ",
+  "home.get_started": "Bat dau",
+  "home.get_code_at": "Lay code tu",
+  "home.reactjs_template": "ReactJS Template",
+  "home.review_the": "Xem demo tai ",
+  "home.demo_app": "Chay thu",
+  "notfound.header": "404 Page Not Found",
+  "login.email_placeholder_text": "Enter an email",
+  "login.username_placeholder_text": "Enter a username",
+  "login.password_placeholder_text": "Enter a password",
+  "login.email_label": "Email",
+  "login.username_label": "Username",
+  "login.password_label": "Password",
+  "task_list": {
+    "task": "Công việc",
+    "search": "Tìm",
+    "present": "Hiện tại",
+    "overtime": "Quá hạn",
+    "ongoing": "Đang thực hiện",
+    "pedding": "Chưa bắt đầu",
+    "upcoming": "Sắp diễn ra",
+    "complete": "Hoàn tất",
+    "high_priority": "Ưu tiên cao",
+    "normal_priority": "Bình thường",
+    "low_priority": "Ưu tiên thấp",
+    "employee": "Nhân viên",
+    "status": "Trạng thái",
+    "filter": "Độ ưu tiên",
+    "created": "Tạo mới",
+    "wasAssign": "Được giao",
+    "doing": "Đang thực hiện",
+    "done": "Hoàn thành",
+    "new": "Mới",
+    "canceled": "Huỷ",
+    "closed": "Đóng",
+    "failed": "Thất bại",
+    "see_detail": "Xem chi tiết",
+    "copy": "Sao chép đường dẫn",
+    "delete": "Xoá",
+    "delete_success": "Đã xoá thành công",
+    "insert_success": "Đã thêm thành công",
+    "update_success": "Đã cập nhật thành công",
+    "generate_task": "Đã tạo việc tự động thành công!",
+    "des_placeholder": "Mô tả giới thiệu nhiệm vụ công việc cần thực hiện",
+    "apartment": "Phòng ban",
+    "content_detail": "Nội dung chi tiết",
+    "files": "Đính kèm {{total}}",
+    "attach_ment": "Đính kèm",
+    "child_mission": "Nhiệm vụ con",
+    "active": "Hoạt động",
+    "detail": "Xem chi tiết",
+    "executor": "Người thực hiện",
+    "annunciator": "Người báo cáo",
+    "status_work": "Trạng thái công việc",
+    "start_date": "Ngày thực hiện",
+    "end_date": "Ngày kết thúc",
+    "comment": "Bình luận",
+    "history": "Lịch sử",
+    "enter_history": "Nhập bình luận...",
+    "are_you_sure": "Bạn chắc chắn muốn xoá công việc này?",
+    "yes": "Có",
+    "no": "Không",
+    "are_you_sure_delete_file": "Bạn chắc chắn muốn xoá file này?",
+    "are_want_to_crate_task_sub": "Bạn có muốn tạo {{total}} nhiệm vụ từ nội dung vừa chỉnh sửa không",
+    "update": "cập nhật",
+    "assignedStaffId": "Người thực hiện",
+    "reportedStaffId": "Người báo cáo",
+    "taskPriority": "Tiến độ",
+    "taskStartDate": "Ngày bắt đầu",
+    "taskStatus": "Trạng thái",
+    "taskEndDate": "Ngày kết thúc",
+    "taskDescription": "Nội dung chi tiết",
+    "taskTitle": "Tiêu đề",
+    "stationId": "Phòng ban"
+  },
+  "notfound.go_back_to_home": "Go back to homepage",
+  "document": {
+    "title": "Tiêu đề",
+    "types": "Loại tài liệu",
+    "add_documents": "Thêm tài liệu",
+    "documentCode" : "Mã tài liệu : ",
+    "text": "NameRoom",
+    "documents": "Tài liệu",
+    "documentary": "Công văn",
+    "Excel": "Excel",
+    "selected_document": "Lựa chọn tài liệu",
+    "enter_code": "Nhập mã tài liệu",
+    "upload": "Tải lên",
+    "all_types": "Tất cả loại",
+    "all_download": "Tải tất cả",
+    "add_new": "Thêm mới",
+    "enter_title": "Nhập tiêu đề",
+    "chose_types": "Chọn loại tài liệu",
+    "download": "Tải xuống",
+    "copy_path": "Sao chép đường dẫn",
+    "make_copy": "Tạo bản copy",
+    "delete": "Xóa",
+    "code_title" : "Mã tài liệu",
+    "text_title" : "Tiêu đề",
+    "date_issued" : "Ngày ban hành : ",
+    "note" : "Chỉ hỗ trợ định dạng PDF, Word (Doc / Docx), Excel (XLS / XLSX)",
+    "upload_fail" : "Tải lên không thành công!",
+    "note_message" : "Tập tin không đúng định dạng. Chỉ hỗ trợ định dạng PDF, Word (Doc / Docx), Excel (XLS / XLSX).",
+    "chose_day" : "Chọn ngày"
+  },
+  "account": {
+    "account": "Tài khoản",
+    "information": "Thông tin",
+    "password": "Mật khẩu",
+    "logout": "Đăng xuất",
+    "individual": "Thông tin cá nhân",
+    "name": "Họ và tên",
+    "cccd": "Số CMND/CCCD",
+    "place": "Nơi sinh",
+    "city": "Tỉnh/thành",
+    "date_bird": "Ngày sinh",
+    "sex": "Giới tính",
+    "address": "Địa chỉ cư chú",
+    "district": "Quận/huyện",
+    "information_work": "Thông tin công việc",
+    "place_work": "Nơi công tác",
+    "option": "TT.Thử nghiệm xe cơ giới (VMTC)",
+    "phone_number": "Số điện thoại",
+    "level": "Trình độ",
+    "update": "Cập nhật",
+    "cancel": "Hủy",
+    "start_work": "Ngày bắt đầu làm việc",
+    "email": "Email",
+    "tphcm": "TPHCM",
+    "chose_city": "Chọn tỉnh/thành",
+    "chose_district": "chọn quận/huyện",
+    "chose_work": "Chọn nơi công tác",
+    "current_password": "Mật khẩu hiện tại",
+    "new_password": "Mật khẩu mới",
+    "confirm_password": "Xác nhận lại mật khẩu",
+    "male": "Nam",
+    "felmale": "Nữ",
+    "CCCD": "CCCD phải là số",
+    "email_validate": "Email không đúng định dạng"
+  },
+  "copyLinkSuccess": "Sao chép đường dẫn thành công",
+  "notify" : {
+    "notify":"Thông báo"
+   
+  }
+}
