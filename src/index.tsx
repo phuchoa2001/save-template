@@ -1,4 +1,3 @@
-
 import ReactDOM from 'react-dom';
 import { I18nextProvider } from 'react-i18next'
 import { Helmet } from 'react-helmet'
@@ -13,7 +12,12 @@ import { Provider } from 'react-redux';
 import store from './redux'
 
 // ** Router
-import Routers from './routers'
+import Routers from './routers';
+
+// ** Styles 
+import '@assets/styles/__global.scss'
+import "@assets/styles/__resetcss.scss"
+import 'antd/dist/reset.css';
 
 ReactDOM.render(
   <Provider store={store}>

@@ -1,0 +1,47 @@
+@import '../../../assets/styles/_colors';
+.root {
+  position: relative;
+  .sideBar {
+    height: 100vh;
+
+    background-color: $menu-bg;
+    
+    z-index: 11;
+    &-header {
+      height: 50px;
+      width: 90%;
+      margin-top: 10px;
+      margin-left: 5%;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      color: #fff;
+
+      font-weight: 700;
+      &.active {
+        margin-bottom: 10px;
+
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      span {
+        color: $primary;
+      }
+      .sideBar-icon {
+        color: #fff;
+      }
+    }
+    &-title {
+      &.active {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .container {
+    max-height: 100vh;
+    
+    overflow: auto;
+  }
+}

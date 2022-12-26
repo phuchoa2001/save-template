@@ -1,4 +1,4 @@
-@import url('~antd/dist/antd.min.css');
+
 @import '@assets/styles/__colors.scss';
 
 $base-border-radius: 6px;
@@ -49,10 +49,11 @@ $base-border-radius: 6px;
 }
 
 .ant-modal-title {
+  color: $black;
+
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  color: $black;
   text-align: center;
 }
 .account_item {

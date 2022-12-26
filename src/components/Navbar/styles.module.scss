@@ -1,0 +1,10 @@
+.navbar {
+  &-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & svg path {
+      fill: #fff;
+    }
+  }
+}

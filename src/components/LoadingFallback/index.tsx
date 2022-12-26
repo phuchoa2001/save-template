@@ -1,10 +1,11 @@
 import { FC, memo } from 'react'
 import { isEqual } from 'lodash'
 import { Spin } from 'antd'
+
 import { useClassnames } from '@hooks/useClassnames'
+
 import { toStyledModuleNames } from '@utils/styledModuleName'
 import styles from './styles.module.scss'
-
 const styledModule = toStyledModuleNames(styles)
 
 type LoadingFallbackProps = {

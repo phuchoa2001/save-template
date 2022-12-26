@@ -1,0 +1,51 @@
+.container {
+  /* Box Model */
+  padding: 0px 10px;
+}
+
+.containerMobile {
+  &-header {
+    position: relative;
+
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 0px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #333;
+  }
+
+  &-label {
+    color: #fff;
+
+    font-weight: 700;
+  }
+}
+
+.sideBar {
+  &-box {
+    position: absolute;
+    left: 0px;
+    top: 100%;
+
+    width: 100%;
+    height: calc(100vh - 50px);
+    padding: 0px 10px;
+
+    display: none;
+
+    background: #fff;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &-icon svg path {
+    fill: #fff;
+  }
+}
