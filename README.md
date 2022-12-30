@@ -135,6 +135,10 @@ export default AppChat
 _Viết chi tiết dự án của bản thân . Càng chi tiết càng dể code_
 [Trang website bản vẽ](https://markdownlivepreview.com/).
 
+###### 4. Quy tắc Github
+* Không được pull tất cả file lên như git add .
+* Không được pull code không sửa đổi 
+* Không 
+
 ## Lời kết 
 > Đây là dự án học hỏi của tôi về cách viết code hiểu quả . Những mục trên kia chưa chắc là đúng . Bạn nên coi nó trò vui vẻ vì tôi khá gà trong code .Cảm ơn bạn đã xem
-
