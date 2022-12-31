@@ -133,7 +133,7 @@ export default AppChat
  ```
 ###### 3. Code là dể . Giải quyết vẫn đề nó mới khó 
 _Viết chi tiết dự án của bản thân . Càng chi tiết càng dể code_
-[Trang website bản vẽ](https://markdownlivepreview.com/).
+[Trang website bản vẽ](https://drive.google.com/file/d/12Y84akpzxv8NNsdViiDC6lrpZ0iohhAs/view).
 
 ###### 4. Quy tắc Github
 * Không được pull tất cả file lên như git add .
