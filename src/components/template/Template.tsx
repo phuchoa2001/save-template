@@ -5,7 +5,9 @@ import { toStyledModuleNames } from '@utils/styledModuleName'
 import styles from './styles.module.scss'
 const styledModule = toStyledModuleNames(styles)
 
-type Props = {}
+type Props = {
+  onAddRTag: (title: string) => void
+}
 
 const randomColor = () => {
   const colors = [
@@ -15,8 +17,10 @@ const randomColor = () => {
 }
 
 const Template = (props: Props) => {
+  const { onAddRTag } = props;
+
   return (
-    <Col className="gutter-row" xs={24} sm={24} md={8} lg={6} xl={6}>
+    <Col className="gutter-row" xs={24} sm={24} md={8} lg={6} xl={6} onClick={() => onAddRTag("React")}>
       <Card
         bodyStyle={{ padding: 10 }}
         className={styledModule`card`}

@@ -2,20 +2,21 @@ import { Row } from 'antd';
 
 import Template from './Template';
 
-type Props = {}
+type ListTemplateProps = {
+  onAddRTag: (title: string) => void
+}
 
-const ListTemplate = (props: Props) => {
+const ListTemplate = (props: ListTemplateProps) => {
   return (
     <Row gutter={[16 , 16]}>
-      <Template />
-      <Template />
-      <Template />
-      <Template />
-      <Template />
-      <Template />
-      <Template />
-      <Template />
-    </Row>
+      <Template onAddRTag={props.onAddRTag} />
+      <Template onAddRTag={props.onAddRTag} />
+      <Template onAddRTag={props.onAddRTag} />
+      <Template onAddRTag={props.onAddRTag} />
+      <Template onAddRTag={props.onAddRTag} />
+      <Template onAddRTag={props.onAddRTag} />
+      <Template onAddRTag={props.onAddRTag} />
+      <Template onAddRTag={props.onAddRTag} />
   )
 }
 
