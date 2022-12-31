@@ -17,6 +17,7 @@ const ListTemplate = (props: ListTemplateProps) => {
       <Template onAddRTag={props.onAddRTag} />
       <Template onAddRTag={props.onAddRTag} />
       <Template onAddRTag={props.onAddRTag} />
+    </Row>
   )
 }
 
