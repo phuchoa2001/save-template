@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
+import clsx from 'clsx';
 
 // ** NavBarBack Component Imports
 import { Icon } from '@components/CustomIcon';
 
 import { MENU_ITEMS as items } from '@enums/menu';
 
+// ** Styles
 import { toStyledModuleNames } from '@utils/styledModuleName';
 import styles from './styles.module.scss'
-import clsx from 'clsx';
 const styledModule = toStyledModuleNames(styles);
 
 const LayoutMenu = () => {
