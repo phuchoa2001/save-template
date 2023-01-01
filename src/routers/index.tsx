@@ -8,6 +8,7 @@ import MobileLayout from '@components/Layout/layoutMobile/LayoutMobile'
 import { useResponsive } from '@hooks/useResponsive'
 
 import { PUBLIC_ROUTERS } from './public-routes'
+import { MOBILE_ROUTERS } from './mobile-routes'
 
 /**
  * Router for Web view
@@ -30,7 +31,7 @@ const MobileRoutes = () => {
     {
       path: '/',
       element: <MobileLayout />,
-      children: PUBLIC_ROUTERS
+      children: [...MOBILE_ROUTERS,...PUBLIC_ROUTERS]
     }
   ])
 

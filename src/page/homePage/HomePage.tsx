@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 import { Tabs } from 'antd'
+import { useNavigate } from 'react-router-dom'
 
 import { useResponsive } from '@hooks/useResponsive'
 
 import Container from '@components/Layout/layoutMobile/Container'
 import ListTemplate from '@components/template/ListTemplate'
+
+import { TEMPLATE_ROUTER } from '@enums/router'
 
 import { toStyledModuleNames } from '@utils/styledModuleName'
 import styles from './styles.module.scss'
@@ -13,22 +16,27 @@ const styledModule = toStyledModuleNames(styles)
 const HomePage = () => {
   const [activeKey, setActiveKey] = useState<string>("all");
 
+  const navigator = useNavigate();
   const responsive = useResponsive()
 
   const handleAddTag = (title: string) => {
-    const key = "key:" + Math.random();
+    if (responsive['lg']) {
+      const key = "key:" + Math.random();
 
-    setItems(prev => (
-      [
-        ...prev,
-        {
-          label: title,
-          children: <p>New Tab Pane {title}</p>,
-          key
-        },
-      ]
-    ));
-    setActiveKey(key);
+      setItems(prev => (
+        [
+          ...prev,
+          {
+            label: title,
+            children: <p>New Tab Pane {title}</p>,
+            key
+          },
+        ]
+      ));
+      setActiveKey(key);
+    } else {
+      navigator(`${TEMPLATE_ROUTER}/${title}`)
+    }
   }
   const [items, setItems] = useState([{
     key: 'all',
