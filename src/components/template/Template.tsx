@@ -1,12 +1,15 @@
-import React from 'react'
+
 import { Col, Card, Typography, Space, Tag } from 'antd';
+
+import { templateModel } from '@models/template';
 
 import { toStyledModuleNames } from '@utils/styledModuleName'
 import styles from './styles.module.scss'
 const styledModule = toStyledModuleNames(styles)
 
 type Props = {
-  onAddRTag: (title: string) => void
+  onAddRTag: (title: string) => void,
+  item: templateModel
 }
 
 const randomColor = () => {
@@ -17,20 +20,21 @@ const randomColor = () => {
 }
 
 const Template = (props: Props) => {
-  const { onAddRTag } = props;
-
+  const { onAddRTag, item } = props;
+  const { title, desc, image, tags } = item;
   return (
-    <Col className="gutter-row" xs={24} sm={24} md={8} lg={6} xl={6} onClick={() => onAddRTag("React")}>
+    <Col className="gutter-row" xs={24} sm={24} md={8} lg={6} xl={6}>
       <Card
         bodyStyle={{ padding: 10 }}
         className={styledModule`card`}
         cover={<img alt="example" className={styledModule`card-image`}
-          src="https://i.pinimg.com/564x/98/ea/f7/98eaf78154e4245da29b3cc25c5f2d02.jpg" />}
+          src={image} onClick={() => onAddRTag(title)} />}
       >
-        <Typography.Title level={4}>Nodejs</Typography.Title>
-        <Space className={styledModule`card-tags`}>
-          <Tag color={randomColor()}>mongdb</Tag>
-          <Tag color={randomColor()}>express</Tag>
+        <Typography.Title level={4} onClick={() => onAddRTag(title)}>{title}</Typography.Title>
+        <Space className={styledModule`card-tags`} wrap={true}>
+          {tags.map((item) =>
+            <Tag color={randomColor()}>{item}</Tag>
+          )}
         </Space>
         <Typography.Paragraph
           type="secondary"
@@ -45,14 +49,7 @@ const Template = (props: Props) => {
           <span>
             <Typography.Text strong>Mô tả :</Typography.Text>
           </span>
-          Đôi nét về tác giả Hạ Tri Chương
-          - Hạ Tri Chương , tự Quý Chân, hiệu Tứ Minh cuồng khách, quê ở Vĩnh Hưng, Việt Châu
-
-          - Ông đỗ tiến sĩ năm 695, sinh sống, học tập và làm quan trên 50 năm ở kinh đô Trường An, rất được Đường Huyền Tông vị nể. Sau đó, ông xin từ quan về làm đạo sĩ
-
-          - Ông là bạn vong niên của thi hào Lí Bạch
-
-          - Ông thích uống rượu, tính tình hào phóng, ông còn để lại 20 bài thơ
+          {desc}
         </Typography.Paragraph>
       </Card>
     </Col>
