@@ -1,4 +1,3 @@
-
 import { Col, Card, Typography, Space, Tag } from 'antd';
 
 import { templateModel } from '@models/template';
@@ -22,6 +21,7 @@ const randomColor = () => {
 const Template = (props: Props) => {
   const { onAddRTag, item } = props;
   const { title, desc, image, tags } = item;
+  
   return (
     <Col className="gutter-row" xs={24} sm={24} md={8} lg={6} xl={6}>
       <Card
