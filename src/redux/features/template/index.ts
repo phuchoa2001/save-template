@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 import { templateModel } from '@models/template'
-import { FilterModel } from '@models/filter';
+import { FilterModel } from '@models/Filter';
 
 export const templateApi = createApi({
   reducerPath: "templateApi",
