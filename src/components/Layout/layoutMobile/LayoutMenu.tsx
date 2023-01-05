@@ -28,9 +28,11 @@ const LayoutMenu = () => {
         />
       }
       <div className={clsx(styledModule`sideBar-box`, open ? styledModule`active` : "")} >
-        {items.map(item => (
-          <p key={item.key}>{item.label}</p>
-        ))}
+        <div className={styledModule`sideBar-list`}>
+          {items.map(item => (
+            <p key={item.key} className={styledModule`sideBar-item`}>{item.label}</p>
+          ))}
+        </div>
       </div >
     </div >
   )
