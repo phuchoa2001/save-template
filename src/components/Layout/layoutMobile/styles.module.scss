@@ -9,14 +9,14 @@
   &-header {
     position: relative;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     width: 100%;
     height: 50px;
     box-sizing: border-box;
     padding: 0px 10px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
     background: #333;
   }
@@ -34,11 +34,11 @@
     left: 0px;
     top: 100%;
 
+    display: none;
+
     width: 100%;
     height: calc(100vh - 50px);
     padding: 0px 10px;
-
-    display: none;
 
     background: #fff;
 
