@@ -1,4 +1,5 @@
 import { Col, Card, Typography, Space, Tag } from 'antd';
+import { useTranslation } from 'react-i18next';
 
 import { templateModel } from '@models/template';
 
@@ -21,6 +22,8 @@ const randomColor = () => {
 const Template = (props: Props) => {
   const { onAddRTag, item } = props;
   const { title, desc, image, tags } = item;
+
+  const { t: translation } = useTranslation()
 
   return (
     <Col className="gutter-row" xs={24} sm={24} md={8} lg={6} xl={6}>
@@ -47,7 +50,7 @@ const Template = (props: Props) => {
           }
         >
           <span>
-            <Typography.Text strong>Mô tả :</Typography.Text>
+            <Typography.Text strong>{translation("template.desc")} :</Typography.Text>
           </span>
           {desc}
         </Typography.Paragraph>

@@ -36,7 +36,7 @@ const LayoutMenu = () => {
           </Col>
         </div>
         <div className={styledModule`sideBar-list`}>
-          {items.map(item => (
+          {items().map(item => (
             <p key={item.key} className={styledModule`sideBar-item`}>{item.label}</p>
           ))}
         </div>

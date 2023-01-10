@@ -35,7 +35,7 @@ function LeftSideBar() {
         theme="dark"
         mode="inline"
         defaultSelectedKeys={['1']}
-        items={items}
+        items={items()}
       />
       <Language isAcronyms={collapsed} />
     </Layout.Sider>
