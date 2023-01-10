@@ -40,7 +40,7 @@ const ListTemplate = (props: ListTemplateProps) => {
         {!isLoading &&
           (
             data?.map((item) => (
-              <Template onAddRTag={props.onAddRTag} item={item} />
+              <Template onAddRTag={props.onAddRTag} key={item.id} item={item} />
             ))
           )
         }

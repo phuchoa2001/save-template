@@ -21,7 +21,7 @@ const randomColor = () => {
 const Template = (props: Props) => {
   const { onAddRTag, item } = props;
   const { title, desc, image, tags } = item;
-  
+
   return (
     <Col className="gutter-row" xs={24} sm={24} md={8} lg={6} xl={6}>
       <Card
@@ -32,8 +32,8 @@ const Template = (props: Props) => {
       >
         <Typography.Title level={4} onClick={() => onAddRTag(title)}>{title}</Typography.Title>
         <Space className={styledModule`card-tags`} wrap={true}>
-          {tags.map((item) =>
-            <Tag color={randomColor()}>{item}</Tag>
+          {tags.map((item, index) =>
+            <Tag color={randomColor()} key={index}>{item}</Tag>
           )}
         </Space>
         <Typography.Paragraph
