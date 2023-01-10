@@ -6,9 +6,11 @@ import {
   MenuUnfoldOutlined
 } from '@ant-design/icons';
 
-import { toStyledModuleNames } from '@utils/styledModuleName'
+import Language from '@components/Language';
+
 import { MENU_ITEMS as items } from '@enums/menu';
 
+import { toStyledModuleNames } from '@utils/styledModuleName'
 import styles from './styles.module.scss'
 const styledModule = toStyledModuleNames(styles)
 
@@ -35,6 +37,7 @@ function LeftSideBar() {
         defaultSelectedKeys={['1']}
         items={items}
       />
+      <Language isAcronyms={collapsed} />
     </Layout.Sider>
   )
 }

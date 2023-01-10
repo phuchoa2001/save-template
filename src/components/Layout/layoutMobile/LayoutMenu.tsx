@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
+import { Col } from 'antd';
 import clsx from 'clsx';
 
 // ** NavBarBack Component Imports
 import { Icon } from '@components/CustomIcon';
+import Language from '@components/Language';
 
 import { MENU_ITEMS as items } from '@enums/menu';
 
@@ -28,6 +30,11 @@ const LayoutMenu = () => {
         />
       }
       <div className={clsx(styledModule`sideBar-box`, open ? styledModule`active` : "")} >
+        <div className={styledModule`sideBar-more`}>
+          <Col span={24}>
+            <Language isAcronyms={false} />
+          </Col>
+        </div>
         <div className={styledModule`sideBar-list`}>
           {items.map(item => (
             <p key={item.key} className={styledModule`sideBar-item`}>{item.label}</p>
