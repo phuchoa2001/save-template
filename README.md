@@ -136,9 +136,11 @@ _Viết chi tiết dự án của bản thân . Càng chi tiết càng dể code
 [Trang website bản vẽ](https://drive.google.com/file/d/12Y84akpzxv8NNsdViiDC6lrpZ0iohhAs/view).
 
 ###### 4. Quy tắc Github
-* Không được pull tất cả file lên như git add .
-* Không được pull code không sửa đổi 
-* Không 
+* Không được push tất cả file lên như git add .
+* Không được push code không sửa đổi 
+
+###### 5. Quy tắc đa ngôn ngữ (i18next)
+* Tất cả văn bản đều lấy từ đa ngôn ngữ (i18next)
 
 ## Lời kết 
 > Đây là dự án học hỏi của tôi về cách viết code hiểu quả . Những mục trên kia chưa chắc là đúng . Bạn nên coi nó trò vui vẻ vì tôi khá gà trong code .Cảm ơn bạn đã xem
