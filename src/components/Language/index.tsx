@@ -1,4 +1,5 @@
 import { Switch } from 'antd';
+import { useTranslation } from 'react-i18next';
 
 import { toStyledModuleNames } from '@utils/styledModuleName'
 import styles from './styles.module.scss'
@@ -9,14 +10,16 @@ type LanguageProps = {
 }
 
 const Language = ({ isAcronyms }: LanguageProps) => {
+  const { t: translation } = useTranslation()
+
   return (
     <div className={styledModule`language`}>
       <Switch
         checkedChildren={
-          isAcronyms ? <p>VN</p> : <p>Tiếng việt</p>
+          isAcronyms ? <p>{translation("language.VN")}</p> : <p>{translation("language.vietnamese")}</p>
         } className={styledModule`language-switch`}
         unCheckedChildren={
-          isAcronyms ? <p>EN</p> : <p>Tiếng Anh</p>
+          isAcronyms ? <p>{translation("language.EN")}</p> : <p>{translation("language.english")}</p>
         }
         defaultChecked
       />
