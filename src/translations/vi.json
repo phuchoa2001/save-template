@@ -1,3 +1,17 @@
 {
-  
+  "menu" : {
+   "listTemplate" : "Danh sách template"
+  },
+  "language" : {
+    "VN" : "VN",
+    "EN" : "EN" , 
+    "vietnamese" : "Tiếng việt" , 
+    "english" : "Tiếng anh"
+  }, 
+  "template" : {
+    "desc" : "Mô tả"
+  },
+  "category" : {
+    "textTest" : "Thể loại"
+  }
 }

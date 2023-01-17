@@ -12,5 +12,17 @@
 .pagination {
   display: flex;
   justify-content: center;
+  
   margin: 20px 0px;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 16px 0px;
+
+  .listCategory {
+    flex: 1;
+  }
 }
