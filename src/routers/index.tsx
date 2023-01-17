@@ -5,6 +5,7 @@ import { BrowserRouter, useRoutes } from 'react-router-dom'
 import LoadingFallback from '@components/LoadingFallback'
 import LayoutPc from '@components/Layout/layoutPc/LayoutPc'
 import MobileLayout from '@components/Layout/layoutMobile/LayoutMobile'
+
 import { useResponsive } from '@hooks/useResponsive'
 
 import { PUBLIC_ROUTERS } from './public-routes'

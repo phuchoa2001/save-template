@@ -1,0 +1,15 @@
+@import '@assets/styles/__colors.scss';
+
+.list {
+  display: flex;
+  overflow-x: auto;
+}
+
+.category {
+  padding: 0px 8px;
+
+  &:hover {
+    color: $primary;
+    cursor: pointer;
+  }
+}

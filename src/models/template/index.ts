@@ -6,3 +6,8 @@ export type templateModel = {
   infoTemplate: string,
   tags: string[]
 }
+
+export type FilterTemplateModel = {
+  limit : number ,
+  page : number
+}
