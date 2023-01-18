@@ -1,9 +1,9 @@
 import { Fragment, useState } from 'react';
-import { Row, Pagination } from 'antd';
+import { Row, Pagination, Col } from 'antd';
 
 import Template from './Template';
 import ListCategory from '../Category/ListCategory';
-import Search from './Search';
+import SearchTemplate from './SearchTemplate';
 
 import { useResponsive } from 'ahooks';
 
@@ -34,7 +34,7 @@ const FilterTemplate = (props: FilterTemplateProps) => {
           <ListCategory />
         </div>
         <div className={styledModule`search`}>
-          <Search />
+          <SearchTemplate />
         </div>
       </div>
     )
@@ -78,7 +78,9 @@ const ListTemplate = (props: ListTemplateProps) => {
           {!isLoading &&
             (
               data?.map((item) => (
-                <Template onAddRTag={props.onAddRTag} key={item.id} item={item} />
+                <Col className="gutter-row" xs={24} sm={24} md={8} lg={6} xl={6}>
+                  <Template onAddRTag={props.onAddRTag} key={item.id} item={item} />
+                </Col>
               ))
             )
           }
@@ -102,7 +104,9 @@ const ListTemplate = (props: ListTemplateProps) => {
         {!isLoading &&
           (
             data?.map((item) => (
-              <Template onAddRTag={props.onAddRTag} key={item.id} item={item} />
+              <Col className="gutter-row" xs={24} sm={24} md={8} lg={6} xl={6}>
+                <Template onAddRTag={props.onAddRTag} key={item.id} item={item} />
+              </Col>
             ))
           )
         }

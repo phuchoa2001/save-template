@@ -1,3 +1,5 @@
+@import '@assets/styles/__colors.scss';
+
 .card {
   cursor: pointer;
   &-image {
@@ -24,5 +26,11 @@
 
   .listCategory {
     flex: 1;
+  }
+}
+.searchTemplate {
+  cursor: pointer;
+  &:hover {
+    color: $primary;
   }
 }
