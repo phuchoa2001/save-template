@@ -8,7 +8,13 @@ export const templateApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: 'https://633fac66d1fcddf69ca7402e.mockapi.io/' }),
   endpoints: (build) => ({
     fetchTemplate: build.query<Array<templateModel>, FilterModel>({
-      query: (filter) => `Template?page=${filter.page}&limit=${filter.limit}`,
+      query: (filter) => {
+        const params = new URLSearchParams("");
+        Object.entries(filter).forEach(([key, value]) => {
+          params.set(key , value as string);
+        })
+        return `Template?${params.toString()}`
+      },
     })
   })
 })

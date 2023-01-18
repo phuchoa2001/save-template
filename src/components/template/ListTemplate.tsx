@@ -78,8 +78,8 @@ const ListTemplate = (props: ListTemplateProps) => {
           {!isLoading &&
             (
               data?.map((item) => (
-                <Col className="gutter-row" xs={24} sm={24} md={8} lg={6} xl={6}>
-                  <Template onAddRTag={props.onAddRTag} key={item.id} item={item} />
+                <Col className="gutter-row" xs={24} sm={24} md={8} lg={6} xl={6} key={item.id}>
+                  <Template onAddRTag={props.onAddRTag}  item={item} />
                 </Col>
               ))
             )
@@ -104,8 +104,8 @@ const ListTemplate = (props: ListTemplateProps) => {
         {!isLoading &&
           (
             data?.map((item) => (
-              <Col className="gutter-row" xs={24} sm={24} md={8} lg={6} xl={6}>
-                <Template onAddRTag={props.onAddRTag} key={item.id} item={item} />
+              <Col className="gutter-row" xs={24} sm={24} md={8} lg={6} xl={6} key={item.id}>
+                <Template onAddRTag={props.onAddRTag} item={item} />
               </Col>
             ))
           )

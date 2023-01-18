@@ -8,6 +8,7 @@ export type templateModel = {
 }
 
 export type FilterTemplateModel = {
+  search?: string,
   limit : number ,
   page : number
 }
