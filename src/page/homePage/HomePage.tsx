@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Tabs } from 'antd'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 import { useResponsive } from '@hooks/useResponsive'
 
@@ -15,9 +16,11 @@ const styledModule = toStyledModuleNames(styles)
 
 const HomePage = () => {
   const [activeKey, setActiveKey] = useState<string>("all");
+  const [active, setActive] = useState("1");
 
   const navigator = useNavigate();
   const responsive = useResponsive()
+  const { t: translation } = useTranslation()
 
   const handleAddTag = (title: string) => {
     if (responsive['lg']) {
@@ -68,7 +71,18 @@ const HomePage = () => {
   }
 
   return (
-    <Container label="Page Home">
+    <Container
+      labelOptions={{
+        activeKey: active,
+        header: "Thể loại",
+        options: Array.from(new Array(10)).map((item, index) => ({
+          key: index.toString(),
+          iconName: 'badge',
+          title: translation("category.textTest") + index,
+          onClick: (key) => setActive(key)
+        }))
+      }}
+    >
       <div className={styledModule`home-mobile`}>
         <ListTemplate onAddRTag={handleAddTag} />
       </div>

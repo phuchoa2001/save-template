@@ -10,6 +10,7 @@ import { ReactComponent as ArrowDownwardIcon } from '@assets/icons/arrow_downwar
 import { ReactComponent as ArrowRightIcon } from '@assets/icons/arrow_right.svg'
 import { ReactComponent as ArrowUpwardIcon } from '@assets/icons/arrow_upward.svg'
 import { ReactComponent as BadgeIcon } from '@assets/icons/badge.svg'
+import { ReactComponent as ChevronDownIcon } from '@assets/icons/chevron_down.svg';
 import { ReactComponent as BusinessCenterIcon } from '@assets/icons/business_center.svg'
 import { ReactComponent as CalendarMonthIcon } from '@assets/icons/calendar_month.svg'
 import { ReactComponent as CameraIndoorIcon } from '@assets/icons/camera_indoor.svg'
@@ -133,6 +134,7 @@ const CustomIcons = {
   cameraIndoor: CameraIndoorIcon,
   contactPhone: ContactPhoneIcon,
   corporateFare: CorporateFareIcon,
+  chevronDown : ChevronDownIcon,
   close: CloseIcon,
   chevronRight: ChevronRightIcon,
   devices: DevicesIcon,
@@ -256,6 +258,7 @@ const IconNames = [
   'badge',
   'businessCenter',
   'calendarMonth',
+  "chevronDown" ,
   'cameraIndoor',
   'contactPhone',
   'corporateFare',
