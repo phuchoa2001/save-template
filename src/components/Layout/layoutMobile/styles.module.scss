@@ -19,6 +19,33 @@
     padding: 0px 10px;
 
     background: #333;
+
+    .label-wrapper {
+      display: flex;
+      align-items: center;
+
+      gap: 6px;
+
+      color: $primary;
+      cursor: pointer;
+
+      .icon {
+        width: 16px;
+        height: 16px;
+
+        color: $white;
+      }
+    }
+
+    .label {
+      flex: 1;
+
+      color: $white;
+
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 
   &-label {
@@ -68,5 +95,69 @@
 
   &-icon svg path {
     fill: #fff;
+  }
+
+}
+
+.tab-drawer {
+  div[class*='ant-drawer-content-wrapper'] {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    >div {
+      border-radius: inherit;
+    }
+  }
+
+  .tab-header {
+    padding-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .tab-list {
+    .tab-item {
+      display: flex;
+      align-items: center;
+
+      padding: 8px 4px;
+      height: 40px;
+      border-radius: 8px;
+      margin-bottom: 5px;
+
+      cursor: pointer;
+
+      &:hover {
+        background-color: $menu-hover-bg;
+      }
+
+      &.active {
+        background-color: $menu-hover-bg;
+
+        .content {
+          color: $primary;
+
+          .icon {
+            color: inherit;
+          }
+        }
+      }
+
+      .icon {
+        width: 24px;
+        height: 24px;
+
+        color: $secondary;
+      }
+
+      .content {
+        display: flex;
+        align-items: center;
+
+        gap: 10px;
+      }
+    }
   }
 }
