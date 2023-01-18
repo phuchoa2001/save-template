@@ -1,4 +1,5 @@
 export type FilterModel = {
   limit : number , 
-  page : number
+  page : number ,
+  search?: string
 }
