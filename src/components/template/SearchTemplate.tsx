@@ -73,7 +73,7 @@ const SearchTemplate = () => {
         </div>
       </Modal>
     )
-  }, [isModalOpen, data])
+  }, [isModalOpen, data , isLoading])
   if (isPc) {
     return (
       <div className={styledModule`searchTemplate`}>
