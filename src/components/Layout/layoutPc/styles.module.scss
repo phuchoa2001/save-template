@@ -17,7 +17,7 @@
       margin-top: 10px;
       margin-left: 5%;
 
-      color: #fff;
+      color: $white;
 
       font-weight: 700;
       &.active {
@@ -30,7 +30,7 @@
         color: $primary;
       }
       .sideBar-icon {
-        color: #fff;
+        color: $white;
       }
     }
     &-title {

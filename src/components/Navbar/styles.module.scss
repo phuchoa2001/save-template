@@ -1,10 +1,12 @@
+@import '@assets/styles/__colors.scss';
+
 .navbar {
   &-back {
     display: flex;
     justify-content: center;
     align-items: center;
     & svg path {
-      fill: #fff;
+      fill: $white;
     }
   }
 }
