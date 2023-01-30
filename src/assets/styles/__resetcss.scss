@@ -4,6 +4,7 @@
 */
 body,
 html {
+
   div,
   span,
   applet,
@@ -90,6 +91,7 @@ html {
     font: inherit;
     vertical-align: baseline;
   }
+
   /* HTML5 display-role reset for older browsers */
   article,
   aside,
@@ -104,14 +106,17 @@ html {
   section {
     display: block;
   }
+
   ol,
   ul {
     list-style: none;
   }
+
   blockquote,
   q {
     quotes: none;
   }
+
   blockquote:before,
   blockquote:after,
   q:before,
@@ -119,10 +124,12 @@ html {
     content: "";
     content: none;
   }
+
   table {
     border-collapse: collapse;
     border-spacing: 0;
   }
+
   margin: 0;
   padding: 0;
   border: 0;
