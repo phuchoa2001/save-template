@@ -7,7 +7,8 @@
 
 .containerMobile {
   &-header {
-    position: relative;
+    position: fixed;
+    top: 0;
 
     display: flex;
     align-items: center;
@@ -19,6 +20,8 @@
     padding: 0px 10px;
 
     background: $gray2;
+
+    z-index: 99;
 
     .label-wrapper {
       display: flex;
@@ -57,9 +60,9 @@
 
 .sideBar {
   &-box {
-    position: absolute;
+    position: fixed;
     left: 0px;
-    top: 100%;
+    top: 50px;
 
     display: none;
 
@@ -170,5 +173,11 @@
         gap: 10px;
       }
     }
+  }
+}
+
+.main {
+  &-mobile {
+    margin-top: 60px;
   }
 }
