@@ -6,7 +6,7 @@ type Props = {}
 
 const InfoTempate = (props: Props) => {
   return (
-    <Container label="Thông tin Tempalte">
+    <Container label="Thông tin Tempalte" hideMenu={true}>
       <div>Page InfoTempate</div>
     </Container>
   )

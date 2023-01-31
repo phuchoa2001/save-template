@@ -72,6 +72,7 @@ const HomePage = () => {
 
   return (
     <Container
+      hideBack={true}
       labelOptions={{
         activeKey: active,
         header: "Thể loại",
