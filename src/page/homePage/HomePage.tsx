@@ -22,8 +22,10 @@ const HomePage = () => {
   const responsive = useResponsive()
   const { t: translation } = useTranslation()
 
+  const isPc = responsive['lg']
+
   const handleAddTag = (title: string) => {
-    if (responsive['lg']) {
+    if (isPc) {
       const key = "key:" + Math.random();
 
       setItems(prev => (
@@ -55,7 +57,7 @@ const HomePage = () => {
       setActiveKey("all");
     }
   };
-  if (responsive['lg']) {
+  if (isPc) {
     return (
       <div >
         <Tabs
