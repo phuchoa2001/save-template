@@ -1,8 +1,8 @@
 import ReactDOM from 'react-dom';
 import { I18nextProvider } from 'react-i18next'
-import { Helmet } from 'react-helmet'
 
 import reportWebVitals from './reportWebVitals';
+import HeaderSeo from '@components/Seo/HeaderSeo';
 
 // ** translations 
 import i18next from './translations/i18next';
@@ -22,10 +22,11 @@ import 'antd/dist/reset.css';
 ReactDOM.render(
   <Provider store={store}>
     <I18nextProvider i18n={i18next}>
-      <Helmet defaultTitle="Workplace" titleTemplate="MySite.com - %s">
-        <meta property="og:type" content={process.env.REACT_APP_PAGE_TYPE} />
-        <meta name="description" content={process.env.REACT_APP_PAGE_DESCRIPTION} />
-      </Helmet>
+      <HeaderSeo
+        title={process.env.REACT_APP_PAGE_TYPE}
+        desc={process.env.REACT_APP_PAGE_DESCRIPTION}
+        image={process.env.REACT_APP_PAGE_IMAGE}
+      />
       <Routers />
     </I18nextProvider>
   </Provider>,
