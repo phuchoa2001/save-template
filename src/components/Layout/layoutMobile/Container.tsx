@@ -19,6 +19,8 @@ export type TabMenuItemOption = {
 
 type ContainerProps = {
   label?: string,
+  hideMenu?: boolean,
+  hideBack? : boolean,
   children: React.ReactNode | React.ReactNode[],
   labelOptions?: {
     header: string
@@ -27,14 +29,14 @@ type ContainerProps = {
   }
 }
 const Container = (props: ContainerProps) => {
-  const { label, labelOptions , children } = props;
+  const { label, labelOptions, children, hideMenu = false , hideBack = false } = props;
   const shouldRenderLabelOptions = !label && !!labelOptions
 
   const [showLabelOptions, setShowLabelOptions] = useState<boolean>(false)
   return (
     <>
       <div className={styledModule`containerMobile-header`}>
-        <NavBarBack />
+        {!hideBack ? <NavBarBack /> : <div></div>}
         <div className={styledModule`page-title`}>
           {shouldRenderLabelOptions ? (
             <div className={styledModule`label-wrapper`} onClick={() => setShowLabelOptions(true)}>
@@ -45,7 +47,7 @@ const Container = (props: ContainerProps) => {
             <div className={styledModule`containerMobile-label`}>{label}</div>
           )}
         </div>
-        <LayoutMenu />
+        {!hideMenu ? <LayoutMenu /> : <div></div>}
       </div>
       <div className={styledModule`container`}>
         {children}
