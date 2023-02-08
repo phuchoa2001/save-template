@@ -12,10 +12,14 @@ type LanguageProps = {
 }
 
 const Language = ({ isAcronyms }: LanguageProps) => {
-  const { t: translation } = useTranslation()
+  const { t: translation , i18n } = useTranslation()
   const responsive = useResponsive()
 
   const isPc = responsive['lg']
+  
+  const handleLanguage = (value : boolean) => {
+    i18n.changeLanguage(value ? "vi" : "en");
+  }
 
   if (isPc) {
     return (
@@ -28,6 +32,7 @@ const Language = ({ isAcronyms }: LanguageProps) => {
           unCheckedChildren={
             isAcronyms ? <p>{translation("language.EN")}</p> : <p>{translation("language.english")}</p>
           }
+          onChange={handleLanguage}
           defaultChecked
         />
       </div>
@@ -44,6 +49,7 @@ const Language = ({ isAcronyms }: LanguageProps) => {
         unCheckedChildren={
           isAcronyms ? <p>{translation("language.EN")}</p> : <p>{translation("language.english")}</p>
         }
+        onChange={handleLanguage}
         defaultChecked
       />
     </div>

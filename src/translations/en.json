@@ -1,3 +1,24 @@
 {
   
+  "menu" : {
+   "listTemplate" : "Danh sách template1"
+  },
+  "search" : {
+    "title" : "Tìm kiếm template 1" , 
+    "placeholder" : {
+      "input" : "Tìm kiếm... 1"
+    }
+  },
+  "language" : {
+    "VN" : "VN1",
+    "EN" : "EN1" , 
+    "vietnamese" : "Tiếng việt1" , 
+    "english" : "Tiếng anh1"
+  }, 
+  "template" : {
+    "desc" : "Mô tả1"
+  },
+  "category" : {
+    "textTest" : "Thể loại1"
+  }
 }

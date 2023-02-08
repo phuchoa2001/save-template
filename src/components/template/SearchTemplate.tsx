@@ -1,5 +1,6 @@
 import { useCallback, useState } from 'react';
 import { Modal, Input, Row, Col } from 'antd';
+import { useTranslation } from 'react-i18next';
 import {
   SearchOutlined
 } from '@ant-design/icons';
@@ -29,6 +30,7 @@ const SearchTemplate = () => {
   });
   const debouncedValue = useDebounce(filter, { wait: 500 });
   const responsive = useResponsive()
+  const { t: translation } = useTranslation()
 
   const isPc = responsive['lg']
 
@@ -43,14 +45,14 @@ const SearchTemplate = () => {
 
   const SearchModal = useCallback(() => {
     return (
-      <Modal title="Tìm kiếm template"
+      <Modal title={translation("search.title")}
         open={isModalOpen}
         onOk={handleOk}
         onCancel={handleCancel}
         footer={null}
       >
         <Input
-          placeholder="Tìm kiếm..."
+          placeholder={translation("search.placeholder.input") || ""}
           allowClear
           onChange={(e) => setFilter({
             search: e.target.value,
@@ -73,7 +75,7 @@ const SearchTemplate = () => {
         </div>
       </Modal>
     )
-  }, [isModalOpen, data , isLoading])
+  }, [isModalOpen, data , isLoading , translation])
   if (isPc) {
     return (
       <div className={styledModule`searchTemplate`}>
