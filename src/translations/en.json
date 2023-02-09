@@ -1,24 +1,25 @@
 {
   
   "menu" : {
-   "listTemplate" : "Danh sách template1"
+   "listTemplate" : "List of Templates"
   },
+  "home" : "Home",
   "search" : {
-    "title" : "Tìm kiếm template 1" , 
+    "title" : "Search Template" , 
     "placeholder" : {
-      "input" : "Tìm kiếm... 1"
+      "input" : "Search..."
     }
   },
   "language" : {
-    "VN" : "VN1",
-    "EN" : "EN1" , 
-    "vietnamese" : "Tiếng việt1" , 
-    "english" : "Tiếng anh1"
+    "VN" : "VN",
+    "EN" : "EN" , 
+    "vietnamese" : "Vietnamese" , 
+    "english" : "English"
   }, 
   "template" : {
-    "desc" : "Mô tả1"
+    "desc" : "Description"
   },
   "category" : {
-    "textTest" : "Thể loại1"
+    "textTest" : "Category"
   }
 }

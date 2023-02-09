@@ -45,7 +45,7 @@ const HomePage = () => {
   }
   const [items, setItems] = useState([{
     key: 'all',
-    label: "Home",
+    label: translation("home"),
     children: <ListTemplate onAddRTag={handleAddTag} />
   }]);
   const handleEditTab = (targetKey:

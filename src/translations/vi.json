@@ -2,6 +2,7 @@
   "menu" : {
    "listTemplate" : "Danh sách template"
   },
+  "home" : "Trang chủ",
   "search" : {
     "title" : "Tìm kiếm template" , 
     "placeholder" : {
