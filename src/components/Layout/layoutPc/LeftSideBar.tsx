@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Menu, Layout } from 'antd'
+import { useNavigate } from 'react-router-dom';
 import clsx from 'clsx';
 import {
   MenuFoldOutlined,
@@ -16,6 +17,7 @@ const styledModule = toStyledModuleNames(styles)
 
 
 function LeftSideBar() {
+  const navigate = useNavigate();
   const [collapsed, setCollapsed] = useState(false);
   return (
     <Layout.Sider className={styledModule`sideBar`} collapsed={collapsed}>
@@ -24,7 +26,7 @@ function LeftSideBar() {
       )}>
         <h3 className={clsx(styledModule`sideBar-title`,
           collapsed ? styledModule`active` : ""
-        )}><span>X</span>oaNen</h3>
+        )} onClick={() => navigate("/")}><span>X</span>oaNen</h3>
         {collapsed ?
           <MenuUnfoldOutlined onClick={() => setCollapsed(prev => !prev)} className={styledModule`sideBar-icon`} />
           :
