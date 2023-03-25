@@ -25,23 +25,7 @@ const HomePage = () => {
   const isPc = responsive['lg']
 
   const handleAddTag = (title: string) => {
-    if (isPc) {
-      const key = "key:" + Math.random();
-
-      setItems(prev => (
-        [
-          ...prev,
-          {
-            label: title,
-            children: <p>New Tab Pane {title}</p>,
-            key
-          },
-        ]
-      ));
-      setActiveKey(key);
-    } else {
-      navigator(`${TEMPLATE_ROUTER}/${title}`)
-    }
+    navigator(`${TEMPLATE_ROUTER}/${title}`)
   }
   const [items, setItems] = useState([{
     key: 'all',

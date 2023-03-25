@@ -20,7 +20,7 @@ const PcRoutes = () => {
     {
       path: '/',
       element: <LayoutPc />,
-      children: PUBLIC_ROUTERS
+      children: [...MOBILE_ROUTERS,...PUBLIC_ROUTERS]
     }
   ])
 
